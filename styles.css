@@ -1,0 +1,39 @@
+.main-logo img{
+width: 100%
+}
+
+.gap{
+    margin-top: 60px;
+}
+
+.about{
+font-style: normal;
+}
+
+body{
+    font-family: Nunito;
+}
+
+.why-iderize{
+    margin-top: 78px;
+}
+
+.desc{
+    height: 278px;	
+    width: 563px;	
+    color: #212121;	
+    font-size: 24px;	
+    font-weight: 300;	
+    line-height: 36px;
+}
+
+.bulb{
+    position: relative;
+}
+
+.bulb img{
+    width: 350px;
+    position: absolute;
+    right: 0;
+    top: -115px;
+}
