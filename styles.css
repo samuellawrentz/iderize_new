@@ -20,7 +20,6 @@ body{
 
 .desc{
     height: 278px;	
-    width: 563px;	
     color: #212121;	
     font-size: 24px;	
     font-weight: 300;	
@@ -36,4 +35,16 @@ body{
     position: absolute;
     right: 0;
     top: -115px;
+}
+
+.value, .vision{
+    height: 445px;
+}
+
+.vision{
+    background-color: #F8EBE1;
+}
+
+.value{
+    background-color: #F8F3EF;
 }
