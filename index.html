@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" media="screen" href="styles.css">
-    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.5.0/knockout-min.js"></script>
 </head>
 <body>
 <div class="container-fluid">
@@ -21,7 +21,7 @@
         <div class="col-md-1"></div>
         <div class="col-md-10">
             <div class="gap col-md-12"></div>
-            <div class="about">
+            <div class="about col-md-12">
                 <h1>About</h1>
             </div>
             <div class="col-md-6">
@@ -43,11 +43,11 @@
             </div>
         </div>
         <div class="col-md-1"></div>
-        <div class="col-md-12 values-vision">
+        <div class="col-md-12 values-vision" style="margin-top: 50px;">
             <div class="col-md-6 vision">
                 <div class="col-md-2"></div>
                 <div class="col-md-8">
-                        <h2 style="margin-top: 85px;">Our Vision</h2>
+                        <h2 style="margin-top: 85px; font-weight: bold">Our Vision</h2>
                         <div class="desc" style="margin-top: 23px;">
                                 We believe in creating a brighter future for humanity. Our vision is to be the leading technology services company delighting customers with amazing products and services and building a fulfilling technology organization for employees.
                         </div>
@@ -57,7 +57,7 @@
             <div class="col-md-6 value">
                     <div class="col-md-2"></div>
                     <div class="col-md-8">
-                            <h2 style="margin-top: 85px;">Our Values</h2>
+                            <h2 style="margin-top: 85px; font-weight: bold">Our Values</h2>
                             <div class="desc" style="margin-top:23px">Our singular obsession is customer satisfaction. We know we're only successful when you are.
                                 <div>
                     </div>
@@ -65,6 +65,31 @@
             </div>
         </div>
     </div>
+    <div class="col-md-12" style="padding-top: 100px; background-color: #F8F8F8">
+    <div class="col-md-1"></div>
+    <div class="col-md-10">
+        <h1 style="font-weight: bold">Services</h1>
+        <div class="col-md-5 zero-padding">
+            <table data-bind="foreach: servicesContent" style="width: 100%">
+                <tr data-bind="click: function(){currentServiceItem(name)}, css: {active: currentServiceItem() === name}" class="serviceItem">
+                    <td data-bind="style: {backgroundImage: 'url(\'\.\/assets\/' + name + '\.png\')' }" class="icon"></td>
+                    <td data-bind="text: name"></td>
+                </tr>
+            </table>
+        </div>
+        <div class="col-md-7 details zero-padding" data-bind="using: getServicesContent()">
+            <div style="padding: 30px;">
+                    <h4 data-bind="text: name"></h4>
+                    <p class="desc" data-bind="text: desc"></p>
+                    <ul data-bind="foreach: listItems" class="service-listItems">
+                        <li data-bind="text: $data, attr: {'data-count': '0' + ($index() + 1)}" class="desc"></li>
+                    </ul>
+                    <p class="desc" data-bind="text: additionalText"></p></div>
+        </div>
+    </div>
+    <div class="col-md-1"></div>
+    </div>
 </div>
 </body>
+<script src="script.js"></script>
 </html>
