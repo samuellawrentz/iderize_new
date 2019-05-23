@@ -31,7 +31,9 @@ var servicesContent = [
     }
 ]
 
-var currentServiceItem = ko.observable('Innovation');
+var contactItems = ['User Experience', 'Web Development', 'QA', 'Backend & API', 'Salesforce', 'Google Analytics', 'iOS/Android', 'IOT', 'Others'];
+var currentServiceItem = ko.observable('Software Development');
+var checkedItems = ko.observableArray([]);
 
 function getServicesContent(){
 return ko.utils.arrayFirst(servicesContent, function(item){
@@ -42,7 +44,9 @@ return ko.utils.arrayFirst(servicesContent, function(item){
 var vm = {
     currentServiceItem: currentServiceItem,
     getServicesContent: getServicesContent,
-    servicesContent: servicesContent
+    servicesContent: servicesContent,
+    contactItems: contactItems,
+    checkedItems: checkedItems
 }
 
 window.ko.applyBindings(vm);

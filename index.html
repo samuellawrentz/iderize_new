@@ -7,6 +7,7 @@
     <title>Page Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" media="screen" href="styles.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.5.0/knockout-min.js"></script>
@@ -129,6 +130,20 @@
                                             placeholder="Eg:09876 54321">
                                     </div>
                                 </div>
+                                <div class="form-group" data-bind="foreach: contactItems">
+                                    <input type="checkbox" data-bind="attr:{id: 'item' + $index(), value: $data}, checked: checkedItems">
+                                    <label data-bind="attr:{for :'item' + $index(), value: $data}, text: $data"></label>
+                                </div>
+                                <div class="form-group" style="margin-top: 20px">
+                                        <label for="message" class="control-label">Your message</label>
+                                        <div style="margin-top: 35px">
+                                            <input type="text" class="form-control" id="message"
+                                                placeholder="I wanted to...">
+                                        </div>
+                                    </div>
+                                    <div class="send-button">
+                                            <i class="fa fa-paper-plane" aria-hidden="true"></i>
+                                    </div>
                             </form>
                         </div>
                     </div>

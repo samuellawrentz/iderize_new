@@ -108,7 +108,7 @@ body{
     left: 8.33%;
     background-color: #191717;
     min-height: 785px;
-    min-width: 565px;
+    width: 565px;
     padding: 60px;
 }
 
@@ -146,3 +146,43 @@ body{
     padding-right: 15px;
     color: #FD853A;
 }
+
+input[type="checkbox"]{
+    display: none;
+  }
+  
+  input[type="checkbox"] + label {
+    display: inline-block;
+    width: 145px;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 8px 0;
+    margin-bottom: 8px;
+    margin-right: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+  }
+
+  input[type="checkbox"]:checked + label {
+    border: 2px solid #00C1FF;
+  }
+
+  .send-button{
+      width: 60px;
+      height: 60px;
+      background: linear-gradient(270deg, #008BFF 0%, #00E5F5 100%);
+      float: right;
+      color: white;
+  }
+
+  .send-button i{
+    font-size: 22px;
+    margin: 0 auto;
+    text-align: center;
+    display: block;
+    height: 60px;
+    line-height: 60px;
+    position: relative;
+    left: -3px;
+  }
