@@ -30,7 +30,7 @@ body{
     color: #212121;	
     font-size: 24px;	
     font-weight: 300;	
-    line-height: 36px;
+    line-height: 40px;
 }
 
 .bulb{
@@ -75,7 +75,7 @@ body{
     font-size: 24px;
     font-weight: 500;
     line-height: 31px;
-    height: 145px;
+    height: 120px;
     line-height: 145px;
     list-style: none;
     cursor: pointer;
@@ -99,6 +99,42 @@ body{
     background-repeat: no-repeat;
     background-position: center;
     border-left: 70px solid transparent;
+    filter: grayscale(1);
+}
+
+.contact-us{
+    position: absolute;
+    top: 50px;
+    left: 8.33%;
+    background-color: #191717;
+    min-height: 785px;
+    min-width: 565px;
+    padding: 60px;
+}
+
+.contact-us form input{
+    background: #191717;
+    border: 0px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    height: 50px;
+    padding: 0;
+    font-size: 20px;
+    margin-bottom: 30px;
+    outline: none;
+}
+
+.control-label{
+    color: white;
+    font-weight: 300;
+}
+
+.control-label:after{
+    content: ' *';
+    color: #FD853A;
+}
+
+.serviceItem.active .icon{
+    filter: none;
 }
 
 .icon +td{
