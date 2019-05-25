@@ -108,7 +108,7 @@ body{
     left: 8.33%;
     background-color: #191717;
     min-height: 785px;
-    width: 565px;
+    width: 41.6%;
     padding: 60px;
 }
 
@@ -153,13 +153,13 @@ input[type="checkbox"]{
   
   input[type="checkbox"] + label {
     display: inline-block;
-    width: 145px;
+    width: 31%;
     font-size: 16px;
     color: white;
     text-align: center;
-    padding: 8px 0;
-    margin-bottom: 8px;
-    margin-right: 8px;
+    padding: 1% 0;
+    margin-bottom: 2%;
+    margin-right: 1.8%;
     border: 1px solid rgba(255, 255, 255, 0.3);
     cursor: pointer;
   }
@@ -185,4 +185,36 @@ input[type="checkbox"]{
     line-height: 60px;
     position: relative;
     left: -3px;
+  }
+
+  .map{
+      height: 800px ;
+      width: 100%;
+  }
+
+  .contact-us-details{
+      color: white;
+      margin-top: 70px;
+      margin-bottom: 45px;
+  }
+
+  .contact-us-details h1{
+      font-weight: bolder;
+  }
+
+  .contact-details table td{
+      padding: 10px 15px 10px 0;
+      font-size: 18px;
+  }
+
+  td .fab{
+      padding: 0 7px
+  }
+
+  .contact-details table tr td:first-child{
+font-weight: bold;
+  }
+
+  .contact-section{
+    background: linear-gradient(133.19deg, #212121 0%, #191919 100%);
   }
