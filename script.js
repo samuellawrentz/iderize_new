@@ -31,7 +31,8 @@ var servicesContent = [
     }
 ]
 
-var contactItems = ['User Experience', 'Web Development', 'QA', 'Backend & API', 'Salesforce', 'Google Analytics', 'iOS/Android', 'IOT', 'Others'];
+var contactItems = servicesContent.map(item => item.name);
+contactItems.push('Other');
 var currentServiceItem = ko.observable('Software Development');
 var checkedItems = ko.observableArray([]);
 

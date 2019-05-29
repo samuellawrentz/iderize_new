@@ -1,5 +1,20 @@
-.main-logo img{
-width: 100%
+.main-logo{
+    background-image: url(./assets/background.jpg);
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+}
+
+.landing-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-weight: 100;
+    color: white;
+    text-align: center;
+    font-size: 60px;
+    transform: translate(-50%, -50%);
 }
 
 .gap{
@@ -16,6 +31,27 @@ font-weight: bold;
 
 body{
     font-family: Nunito;
+}
+
+.container-fluid .row > .col-md-12{
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.navbar{
+    background: #1C1C1C;
+    border: 0;
+    height: 100px;
+    padding: 22px 127px;
+}
+
+.nav.navbar-nav{
+    float: right;
+}
+
+.nav.navbar-nav li{
+    padding: 0 20px;
+    font-size: 20px;
 }
 
 .why-iderize{
