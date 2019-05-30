@@ -225,6 +225,25 @@ input[type="checkbox"]{
       color: white;
   }
 
+  .footer{
+      height: 130px;
+      text-align: center;
+      padding: 50px 0;
+      color: #EAF7FA;
+      background: #000;
+      font-size: 18px;
+  }
+
+  .footer .col-md-4{
+    text-decoration: underline;
+    cursor: pointer;
+    color: #EAF7FA
+  }
+  .footer img{
+      width: 150px;
+      margin-top: -10px;
+  }
+
   .send-button i{
     font-size: 22px;
     margin: 0 auto;
