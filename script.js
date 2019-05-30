@@ -51,3 +51,5 @@ var vm = {
 }
 
 window.ko.applyBindings(vm);
+
+window.slide = new SlideNav();

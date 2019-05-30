@@ -15,6 +15,7 @@
     text-align: center;
     font-size: 60px;
     transform: translate(-50%, -50%);
+    width: 600px;
 }
 
 .gap{
@@ -54,6 +55,14 @@ body{
     font-size: 20px;
 }
 
+.navbar-inverse .navbar-nav > li > a:focus{
+    color: #9d9d9d
+}
+
+.nav.navbar-nav li>a.active{
+    color: #fff;
+}
+
 .why-iderize{
     margin-top: 78px;
 }
@@ -82,6 +91,10 @@ body{
 
 .value, .vision{
     height: 445px;
+}
+
+.values-vision .col-md-8 {
+    padding: 0
 }
 
 .vision{
@@ -189,8 +202,8 @@ input[type="checkbox"]{
   
   input[type="checkbox"] + label {
     display: inline-block;
-    width: 31%;
-    font-size: 16px;
+    width: calc(93%/3);
+    font-size: 14px;
     color: white;
     text-align: center;
     padding: 1% 0;

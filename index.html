@@ -11,7 +11,8 @@
     <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" media="screen" href="styles.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.5.0/knockout-min.js"></script>
-    <!-- <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyDNvd1tHe6YJhKG2JS-8h06pZ531Ii3ZzI"></script> -->
+    <script src="./libs/slideNav.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyDNvd1tHe6YJhKG2JS-8h06pZ531Ii3ZzI"></script>
 </head>
 
 <body>
@@ -25,9 +26,9 @@
                             </a>
                           </div>
                           <ul class="nav navbar-nav">
-                            <li><a href="#">About</a></li>
-                            <li><a href="#">Services</a></li>
-                            <li><a href="#">Contact</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#services">Services</a></li>
+                            <li><a href="#contact">Contact</a></li>
                           </ul>
                         </div>
                       </nav>
@@ -39,34 +40,35 @@
                     <img src="./assets/background.jpg" alt="Creating and Improving Digital Products" srcset="" style="opacity: 0; width: 100%">
                 </div>
             </div>
-            <div class="col-md-1"></div>
-            <div class="col-md-10">
-                <div class="gap col-md-12"></div>
-                <div class="about col-md-12">
-                    <h1>About</h1>
-                </div>
-                <div class="col-md-6">
-                    <div class="why-iderize">
-                        <h2>
-                            Why Iderize?
-                        </h2>
-                        <div class="desc" style="margin-top: 28px;">
-                            We are a global full-cycle agile software development company based out of Salt Lake City,
-                            UT. We create and improve digital products with an experience led, agile mindset. We believe
-                            in helping companies achieve their goals with impactful, industry-specific software
-                            solutions.
+            <div class="col-md-12"  id="about" style="margin-top: 60px">
+                    <div class="col-md-1"></div>
+                    <div class="col-md-10">
+                        <div class="about col-md-12">
+                            <h1>About</h1>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="why-iderize">
+                                <h2>
+                                    Why Iderize?
+                                </h2>
+                                <div class="desc" style="margin-top: 28px;">
+                                    We are a global full-cycle agile software development company based out of Salt Lake City,
+                                    UT. We create and improve digital products with an experience led, agile mindset. We believe
+                                    in helping companies achieve their goals with impactful, industry-specific software
+                                    solutions.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="bulb">
+                                <img src="./assets/Group 17@3x.png" alt="We are an innovative company" srcset="">
+                            </div>
+                        </div>
+                        <div class="row" style="margin-top: 50px">
                         </div>
                     </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="bulb">
-                        <img src="./assets/Group 17@3x.png" alt="We are an innovative company" srcset="">
-                    </div>
-                </div>
-                <div class="row" style="margin-top: 50px">
-                </div>
+                    <div class="col-md-1"></div>
             </div>
-            <div class="col-md-1"></div>
             <div class="col-md-12 values-vision" style="margin-top: 100px;">
                 <div class="col-md-6 vision">
                     <div class="col-md-2"></div>
@@ -92,7 +94,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-12" style="padding-top: 100px; background-color: #F8F8F8">
+            </div>
+            <div class="col-md-12" style="padding-top: 100px; background-color: #F8F8F8" id="services">
                     <div class="col-md-1"></div>
                     <div class="col-md-10">
                         <h1 style="font-weight: bold">Services</h1>
@@ -121,7 +124,7 @@
                     </div>
                     <div class="col-md-1"></div>
                 </div>
-                <div class="col-md-12 contact-section" style="position: relative">
+                <div class="col-md-12 contact-section" style="position: relative" id="contact">
                     <div id="map_canvas" class="map"></div>
                     <div class="contact-us">
                         <h1 style="color: white; text-align: center">How can we help you?</h1>
@@ -190,7 +193,6 @@
                         </div>
                     </div>
                 </div>
-            </div>
             <!-- <div style="float: left">
                 <div class="col-md-6">
                     <div class="col-md-3">Privacy Policy</div>
