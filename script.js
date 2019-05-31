@@ -53,3 +53,19 @@ var vm = {
 window.ko.applyBindings(vm);
 
 window.slide = new SlideNav();
+
+
+$('#send').click(function(){
+    $.ajax({
+        type: 'POST',
+        url: 'https://hooks.zapier.com/hooks/catch/4589797/vihdva/',
+        data: {
+            name: $('#name').val(),
+            email: $('#email').val(),
+            phone: $('#contact').val(),
+            message: $('#message').val()
+        }
+       }).done(function(response) {
+         console.log(response); // if you're into that sorta thing
+       });
+})
