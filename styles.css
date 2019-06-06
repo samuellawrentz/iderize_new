@@ -87,10 +87,12 @@ body{
 }
 
 .bulb img{
-    width: 350px;
+    width: 70%;
+    max-width: 380px;
     position: absolute;
     right: 0;
-    top: -115px;
+    top: -145px;
+    z-index: -1;
 }
 
 .value, .vision{

@@ -14,7 +14,9 @@
 
     .bulb img{
         width: 140px;
-        top: -459px;
+        top: 0px;
+        transform: translateY(-237%);
+    z-index: -1;
     }
 
     .contact-us{
@@ -44,5 +46,25 @@
         position: relative;
         top: 42px;
         z-index: 1;
+      }
+}
+
+@media screen and (min-width: 750px) and (max-width: 1100px){
+    .desc{
+        font-size: 18px;
+    }
+
+    .icon +td {
+        font-size: 18px;
+    }
+
+    .icon{
+        width: 75px;
+    }
+
+    input[type="checkbox"] + label {
+        width: calc(95%/2);
+        padding: 2% 0;
+        margin-bottom: 3%;
       }
 }
