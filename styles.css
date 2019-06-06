@@ -6,6 +6,10 @@
     position: relative;
 }
 
+#about, #services{
+    min-height: 100vh;
+}
+
 .landing-text{
     position: absolute;
     top: 50%;
@@ -34,7 +38,7 @@ body{
     font-family: Nunito;
 }
 
-.container-fluid .row > .col-md-12{
+.container-fluid .row > .col-md-12, #about> .col-md-12{
     padding-left: 0;
     padding-right: 0;
 }

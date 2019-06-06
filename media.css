@@ -1,0 +1,48 @@
+@media screen and (max-width: 780px){
+    .navbar{
+        display: none;  
+    }
+
+    .landing-text{
+        font-size: 24px;
+        width: 300px;
+    }
+
+    .desc{
+        font-size: 18px;
+    }
+
+    .bulb img{
+        width: 140px;
+        top: -459px;
+    }
+
+    .contact-us{
+        position: static;
+        width: 100%;
+        padding: 40px;
+    }
+
+    .contact-us h1{
+        font-size: 24px;
+        text-align: left !important;
+    }
+
+    input[type="checkbox"] + label {
+        width: calc(95%/2);
+        padding: 2% 0;
+        margin-bottom: 3%;
+      }
+
+      .contact-us-details{
+          height: 350px;
+          padding: 30px;
+      }
+
+      .scroll-top{
+        background: rgba(255,255,255,0.05);
+        position: relative;
+        top: 42px;
+        z-index: 1;
+      }
+}
