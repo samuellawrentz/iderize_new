@@ -310,7 +310,11 @@ font-weight: bold;
     background-origin: content-box;
     background-size: contain;
     background-position: center;
-  }
+  }  
+
+.navbar.navbar-inverse.navbar-fixed-top.transparent{
+    background: transparent;
+}
 
   .scroll-bottom{
     position: absolute;

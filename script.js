@@ -68,4 +68,11 @@ $('#send').click(function(){
        }).done(function(response) {
          console.log(response);
        });
+});
+
+$(window).scroll(()=>{
+    $('.navbar').removeClass('transparent');
+    if($(window).scrollTop() < 10){
+        $('.navbar').addClass('transparent');
+    }
 })
