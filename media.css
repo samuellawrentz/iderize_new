@@ -47,6 +47,15 @@
         top: 42px;
         z-index: 1;
       }
+
+      .map{
+          height: 395px;
+          overflow: hidden;
+      }
+
+      .map img{
+          width: 200%
+      }
 }
 
 @media screen and (min-width: 750px) and (max-width: 1100px){

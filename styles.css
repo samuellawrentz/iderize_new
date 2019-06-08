@@ -320,9 +320,8 @@ font-weight: bold;
   }
 
   .scroll-bottom .box{
-      display: inline-block;
-      transform: rotate(180deg);
-      filter: grayscale(1);
+      display: inline-block;      
+      background-image: url(./assets/Arrowdown.png);
       width: 70px;
       cursor: pointer;
   }

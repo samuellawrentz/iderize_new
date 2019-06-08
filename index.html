@@ -13,7 +13,6 @@
     <link rel="stylesheet" href="media.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.5.0/knockout-min.js"></script>
     <script src="./libs/slideNav.min.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js"></script>
 </head>
 
 <body>
@@ -34,7 +33,7 @@
                           </ul>
                         </div>
                       </nav>
-            <div class="col-md-12 col-lg-12">
+            <div class="col-md-12 col-sm-12  col-lg-12">
                 <div class="main-logo">
                     <div class="landing-text">
                             Creating & Improving Digital Products
@@ -46,14 +45,14 @@
                     <img src="./assets/background.jpg" alt="Creating and Improving Digital Products" srcset="" style="opacity: 0; width: 100%; position: relative; z-index: -1">
                 </div>
             </div>
-            <div class="col-md-12" id="about" style="margin-top: 60px">
-                <div class="col-md-12">
+            <div class="col-md-12 col-sm-12 " id="about" style="margin-top: 60px">
+                <div class="col-md-12 col-sm-12 ">
                     <div class="col-md-1"></div>
-                    <div class="col-md-10">
-                        <div class="about col-md-12">
+                    <div class="col-md-10 col-sm-10">
+                        <div class="about col-md-12 col-sm-12 ">
                             <h1>About</h1>
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-md-6 col-sm-6">
                             <div class="why-iderize">
                                 <h2>
                                     Why Iderize?
@@ -66,7 +65,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-md-6 col-sm-6">
                             <div class="bulb">
                                 <img src="./assets/Group 17@3x.png" alt="We are an innovative company" srcset="">
                             </div>
@@ -76,10 +75,10 @@
                     </div>
                     <div class="col-md-1"></div>
             </div>
-            <div class="col-md-12 values-vision" style="margin-top: 100px;">
-                <div class="col-md-6 vision">
+            <div class="col-md-12 col-sm-12  values-vision" style="margin-top: 100px;">
+                <div class="col-md-6 col-sm-6 vision">
                     <div class="col-md-2"></div>
-                    <div class="col-md-8">
+                    <div class="col-md-8 col-sm-8">
                         <h2 style="margin-top: 85px; font-weight: bold">Our Vision</h2>
                         <div class="desc" style="margin-top: 23px;">
                             We believe in creating a brighter future for humanity. Our vision is to be the leading
@@ -89,9 +88,9 @@
                     </div>
                     <div class="col-md-2"></div>
                 </div>
-                <div class="col-md-6 value">
+                <div class="col-md-6 col-sm-6 value">
                     <div class="col-md-2"></div>
-                    <div class="col-md-8">
+                    <div class="col-md-8 col-sm-8">
                         <h2 style="margin-top: 85px; font-weight: bold">Our Values</h2>
                         <div class="desc" style="margin-top:23px">Our singular obsession is customer satisfaction. We
                             know we're only successful when you are.
@@ -103,9 +102,9 @@
                 </div>
             </div>
             </div>
-            <div class="col-md-12" style="padding-top: 100px; background-color: #F8F8F8" id="services">
+            <div class="col-md-12 col-sm-12 " style="padding-top: 100px; background-color: #F8F8F8" id="services">
                     <div class="col-md-1"></div>
-                    <div class="col-md-10">
+                    <div class="col-md-10 col-sm-10">
                         <h1 style="font-weight: bold">Services</h1>
                         <div class="col-md-5 zero-padding" style="padding-top: 49px">
                             <table data-bind="foreach: servicesContent" style="width: 100%">
@@ -117,7 +116,7 @@
                                 </tr>
                             </table>
                         </div>
-                        <div class="col-md-7 details zero-padding" data-bind="using: getServicesContent()">
+                        <div class="col-md-7 col-sm-7 details zero-padding" data-bind="using: getServicesContent()">
                             <div style="padding: 30px 70px;">
                                 <h4 data-bind="text: name" style="color: #00C1FF; margin-bottom: 22px; font-size: 18px">
                                 </h4>
@@ -132,8 +131,10 @@
                     </div>
                     <div class="col-md-1"></div>
                 </div>
-                <div class="col-md-12 contact-section" style="position: relative" id="contact">
-                    <div id="map_canvas" class="map"></div>
+                <div class="col-md-12 col-sm-12  contact-section" style="position: relative" id="contact">
+                    <div id="map_canvas" class="map">
+                        <img src="assets/map.png" alt="Our location" style="width: 100%">;
+                    </div>
                     <div class="contact-us">
                         <h1 style="color: white; text-align: center">How can we help you?</h1>
                         <div style="margin-top: 30px">
@@ -188,7 +189,7 @@
                                 </tr>
                                 <tr>
                                     <td>Office</td>
-                                    <td>3494 W 2550 N Lehi, UT 84043</td>
+                                    <td>333 E Main St #4 Lehi, UT, 84043</td>
                                 </tr>
                             </table>
                         </div>
@@ -197,15 +198,15 @@
                         <a class="box" href="#start"></a>
                     </div>
                 </div>
-                <div class="col-md-12 footer">
-                        <div class="col-md-6">
-                                <div class="col-md-4">Privacy Policy</div>
-                                <div class="col-md-4">Cookie Policy</div>
-                                <div class="col-md-4">Terms & Condition</div>
+                <div class="col-md-12 col-sm-12  footer">
+                        <div class="col-md-6 col-sm-6">
+                                <div class="col-md-4 col-sm-4">Privacy Policy</div>
+                                <div class="col-md-4 col-sm-4">Cookie Policy</div>
+                                <div class="col-md-4 col-sm-4">Terms & Condition</div>
                             </div>
-                            <div class="col-md-6">
-                                <div class="col-md-6" style="text-align: right">Copyright © 2019 Iderize</div>
-                                <div class="col-md-6" style="text-align: left"><img src="./assets/logo.png" alt="iderize"></div>
+                            <div class="col-md-6 col-sm-6">
+                                <div class="col-md-6 col-sm-6" style="text-align: right">Copyright © 2019 Iderize</div>
+                                <div class="col-md-6 col-sm-6" style="text-align: left"><img src="./assets/logo.png" alt="iderize"></div>
                             </div>
                 </div>
 </body>
@@ -214,6 +215,5 @@
   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
   crossorigin="anonymous"></script>
 <script src="script.js"></script>
-<script src="map.js"></script>
 
 </html>
