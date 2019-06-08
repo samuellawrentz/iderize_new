@@ -151,19 +151,8 @@
                                         <input type="email" class="form-control" id="email" placeholder="Eg: jdoe@example.com">
                                     </div>
                                 </div>
-                                <div class="form-group">
-                                    <label for="contact" class="control-label">Contact Number</label>
-                                    <div>
-                                        <input type="phone" class="form-control" id="contact"
-                                            placeholder="Eg:09876 54321">
-                                    </div>
-                                </div>
-                                <div class="form-group" data-bind="foreach: contactItems">
-                                    <input type="checkbox" data-bind="attr:{id: 'item' + $index(), value: $data}, checked: checkedItems">
-                                    <label data-bind="attr:{for :'item' + $index(), value: $data}, text: $data"></label>
-                                </div>
                                 <div class="form-group" style="margin-top: 20px">
-                                        <label for="message" class="control-label">Your message</label>
+                                        <label for="message" class="control-label" id="messageLabel">Your message</label>
                                         <div style="margin-top: 35px">
                                             <input type="text" class="form-control" id="message"
                                                 placeholder="I wanted to...">

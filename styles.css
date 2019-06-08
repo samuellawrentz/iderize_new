@@ -1,8 +1,9 @@
 .main-logo{
     background-image: url(./assets/background.jpg);
     width: 100%;
+    height: 100vh;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     position: relative;
 }
 
@@ -162,7 +163,6 @@ body{
     top: 50px;
     left: 8.33%;
     background-color: #191717;
-    min-height: 785px;
     width: 41.6%;
     padding: 60px;
 }
@@ -183,7 +183,7 @@ body{
     font-weight: 300;
 }
 
-.control-label:after{
+.control-label:not(#messageLabel):after{
     content: ' *';
     color: #FD853A;
 }
@@ -268,7 +268,6 @@ input[type="checkbox"]{
 
   .contact-us-details{
       color: white;
-      margin-top: 70px;
       margin-bottom: 45px;
   }
 
