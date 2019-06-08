@@ -48,6 +48,10 @@
         z-index: 1;
       }
 
+      .main-logo{
+          height: 70vh;
+    }
+
       .map{
           height: 395px;
           overflow: hidden;
