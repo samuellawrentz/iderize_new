@@ -96,7 +96,7 @@ body{
 }
 
 .value, .vision{
-    height: 445px;
+    min-height: 445px;
 }
 
 .values-vision .col-md-8 {
