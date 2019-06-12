@@ -18,9 +18,30 @@
     font-weight: 100;
     color: white;
     text-align: center;
-    font-size: 60px;
     transform: translate(-50%, -50%);
     width: 600px;
+}
+.title{
+    font-size: 60px;
+    font-weight: 700;
+    letter-spacing: 7px;
+}
+
+.sub-text{
+    font-size: 24px;
+}
+
+.line{
+    display: inline-block;
+    width: 16px;
+    height: 6px;
+    background: linear-gradient(270deg, #008BFF 0%, #00E5F5 100%);
+}
+
+.name {
+    font-size: 24px;
+    font-weight: 700;
+    color: #fff !important;
 }
 
 .gap{
@@ -39,7 +60,7 @@ body{
     font-family: Nunito;
 }
 
-.container-fluid .row > .col-md-12, #about> .col-md-12{
+.container-fluid .row > .col-md-12, #about .col-md-12, #about .col-md-6{
     padding-left: 0;
     padding-right: 0;
 }
@@ -334,4 +355,8 @@ font-weight: bold;
     top: -20px;
     font-size: 20px;
     color: #fff;
+  }
+
+  .hide {
+      opacity: 0 !important;
   }

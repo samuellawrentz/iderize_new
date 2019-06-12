@@ -72,7 +72,9 @@ $('#send').click(function(){
 
 $(window).scroll(()=>{
     $('.navbar').removeClass('transparent');
-    if($(window).scrollTop() < 10){
+    if($(window).scrollTop() < 30){
         $('.navbar').addClass('transparent');
     }
+
+        $('.navbar-brand').toggleClass('hide', !($(window).scrollTop() > $('.title').offset().top));
 })
