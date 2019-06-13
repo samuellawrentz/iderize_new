@@ -71,10 +71,10 @@ $('#send').click(function(){
 });
 
 $(window).scroll(()=>{
-    $('.navbar').removeClass('transparent');
-    if($(window).scrollTop() < 30){
-        $('.navbar').addClass('transparent');
-    }
-
+        $('.navbar').toggleClass('transparent', $(window).scrollTop() < 30);
         $('.navbar-brand').toggleClass('hide', !($(window).scrollTop() > $('.title').offset().top));
-})
+});
+
+$(document).ready(function(){
+    $(".owl-carousel").owlCarousel({items: 1, margin: 22, stagePadding: 30});
+  });

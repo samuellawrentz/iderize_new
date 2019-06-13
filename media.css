@@ -53,12 +53,16 @@
     }
 
       .map{
-          height: 395px;
-          overflow: hidden;
+        height: 395px;
+        overflow: hidden;
       }
 
-      .map img{
-          width: 200%
+      .mobile-services{
+          display: block
+      }
+
+      .desktop-services{
+          display: none;
       }
 }
 
@@ -80,4 +84,13 @@
         padding: 2% 0;
         margin-bottom: 3%;
       }
+
+
+      .mobile-services{
+        display: block
+    }
+
+    .desktop-services{
+        display: none;
+    }
 }

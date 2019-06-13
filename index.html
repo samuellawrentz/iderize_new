@@ -7,6 +7,8 @@
     <title>Page Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="libs/owl.carousel.min.css">
+    <link rel="stylesheet" href="libs/owl.theme.default.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" media="screen" href="styles.css">
@@ -106,28 +108,52 @@
             </div>
             <div class="col-md-12 col-sm-12 " style="padding-top: 100px; background-color: #F8F8F8" id="services">
                     <div class="col-md-1"></div>
-                    <div class="col-md-10 col-sm-10">
+                    <div class="col-md-10 col-sm-12">
                         <h1 style="font-weight: bold">Services</h1>
-                        <div class="col-md-5 zero-padding" style="padding-top: 49px">
-                            <table data-bind="foreach: servicesContent" style="width: 100%">
-                                <tr data-bind="click: function(){currentServiceItem(name)}, css: {active: currentServiceItem() === name}"
-                                    class="serviceItem">
-                                    <td data-bind="style: {backgroundImage: 'url(\'\.\/assets\/' + name + '\.png\')' }"
-                                        class="icon"></td>
-                                    <td data-bind="text: name"></td>
-                                </tr>
-                            </table>
+                        <div class="col-md-12 col-sm-12 desktop-services">
+                            <div class="col-md-5 zero-padding" style="padding-top: 49px">
+                                <table data-bind="foreach: servicesContent" style="width: 100%">
+                                    <tr data-bind="click: function(){currentServiceItem(name)}, css: {active: currentServiceItem() === name}"
+                                        class="serviceItem">
+                                        <td data-bind="style: {backgroundImage: 'url(\'\.\/assets\/' + name + '\.png\')' }"
+                                            class="icon"></td>
+                                        <td data-bind="text: name"></td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="col-md-7 col-sm-7 details zero-padding" data-bind="using: getServicesContent()">
+                                <div style="padding: 30px 70px;">
+                                    <h4 data-bind="text: name" style="color: #00C1FF; margin-bottom: 22px; font-size: 18px">
+                                    </h4>
+                                    <p class="desc" data-bind="text: desc"></p>
+                                    <ul data-bind="foreach: listItems" class="service-listItems">
+                                        <li data-bind="text: $data, attr: {'data-count': '0' + ($index() + 1)}"
+                                            class="desc"></li>
+                                    </ul>
+                                    <p class="desc" data-bind="text: additionalText"></p>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-md-7 col-sm-7 details zero-padding" data-bind="using: getServicesContent()">
-                            <div style="padding: 30px 70px;">
-                                <h4 data-bind="text: name" style="color: #00C1FF; margin-bottom: 22px; font-size: 18px">
-                                </h4>
-                                <p class="desc" data-bind="text: desc"></p>
-                                <ul data-bind="foreach: listItems" class="service-listItems">
-                                    <li data-bind="text: $data, attr: {'data-count': '0' + ($index() + 1)}"
-                                        class="desc"></li>
-                                </ul>
-                                <p class="desc" data-bind="text: additionalText"></p>
+                        <div class="col-md-12 col-sm-12 mobile-services">
+                            <div class="owl-carousel" data-bind="foreach: servicesContent">
+                                <div style="padding: 30px 70px;" class="servie-item">
+                                    <table style="width: 100%">
+                                        <tr data-bind="click: function(){currentServiceItem(name)}"
+                                            class="serviceItem">
+                                            <td data-bind="style: {backgroundImage: 'url(\'\.\/assets\/' + name + '\.png\')' }"
+                                                class="icon"></td>
+                                            <td data-bind="text: name"></td>
+                                        </tr>
+                                    </table>
+                                    <hr>
+                                    </h4>
+                                    <p class="desc" data-bind="text: desc"></p>
+                                    <ul data-bind="foreach: listItems" class="service-listItems">
+                                        <li data-bind="text: $data, attr: {'data-count': '0' + ($index() + 1)}"
+                                            class="desc"></li>
+                                    </ul>
+                                    <p class="desc" data-bind="text: additionalText"></p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -135,7 +161,6 @@
                 </div>
                 <div class="col-md-12 col-sm-12  contact-section" style="position: relative" id="contact">
                     <div id="map_canvas" class="map">
-                        <img src="assets/map.png" alt="Our location" style="width: 100%">;
                     </div>
                     <div class="contact-us">
                         <h1 style="color: white; text-align: center">How can we help you?</h1>
@@ -206,5 +231,6 @@
   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
   crossorigin="anonymous"></script>
 <script src="script.js"></script>
+<script src="libs/owl.carousel.min.js"></script>
 
 </html>
