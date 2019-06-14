@@ -1,33 +1,33 @@
 var servicesContent = [
     {
         name: 'Software Development',
-        desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat',
+        desc: 'We combine a creative design approach with the latest software and hardware engineering principles to ensure a spectacular result.',
         listItems : ['Python Backend', 'Frontend Engineering', 'DB Design', 'Product Architecture', 'Site Development'],
-        additionalText: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat'
+        additionalText: 'Using proven methods combined with today’s most advanced tools and data, we can provide you with the edge you need to dominate your niche.'
     },
     {
         name: 'Product Development',
-        desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat',
+        desc: 'For a business to succeed in today’s fast-paced market, agility is number one. We give you the tools you need to move forward with confidence, fully customized to your needs.',
         listItems : ['Design Thinking', 'UX/UI Design', 'Wireframing', 'User Centric Design', 'Market Research'],
-        additionalText: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat'
+        additionalText: 'Support your teams with systems that make sense. Delight your customers by giving them what they want. It’s all possible.'
     },
     {
         name: 'Software Testing',
-        desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat',
+        desc: 'Testing and quality assurance are critical aspects of software and hardware development. Our testing suite leaves nothing to chance, ensuring your products perform exactly as they should.',
         listItems : ['A/B Testing', 'Selenium', 'Test Cases', 'Regression Testing', 'Manual Stage Testing'],
-        additionalText: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat'
+        additionalText: 'Most software failures that occur could have been easily avoided with performance testing. Testing reduces downtime, identifies vulnerabilities, and assures quality from day one.t'
     },
     {
         name: 'Innovation',
-        desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat',
+        desc: 'Today’s most advanced tools and technologies can be applied to your business, improving processes from manufacturing to logistics to customer service, and more besides.',
         listItems : ['Home Automation', 'Drones', 'i Toys', 'Epayment', 'Bio Tech'],
-        additionalText: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat'
+        additionalText: 'Discover what these innovations can do to elevate your business processes and support scale.'
     },
     {
         name: 'Salesforce',
-        desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat',
+        desc: 'Salesforce is one of the most powerful CRMs on the market today, but it reaches its full potential only when it is customized to integrate with your business systems.',
         listItems : ['Analytics', 'Data Mining', 'Hadoop', 'Tie2', 'SFC PRogram'],
-        additionalText: '   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat'
+        additionalText: 'Working closely with you, we will design, configure, and help you implement a dynamic Salesforce workflow.'
     }
 ]
 
