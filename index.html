@@ -42,7 +42,17 @@
                         </div>
                       </nav>
             <div class="col-md-12 col-sm-12  col-lg-12">
+                <div class="mobile-only menu hide">
+                    <div class="close-icon"><i class="fas fa-times"></i></div>
+                    <ul style="padding: 0">
+                            <li style="display: none"><a href="#start">Start</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#services">Services</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
                 <div class="main-logo">
+                    <div class="bars mobile-only"><i class="fas fa-bars"></i></div>
                     <div class="landing-text">
                         <div class="title">IDERIZE</div>
                         <div class="sub-text">Creating & Improving Digital Products</div>
@@ -130,6 +140,7 @@
                                 </table>
                             </div>
                             <div class="col-md-7 col-sm-7 details zero-padding" data-bind="using: getServicesContent()">
+                                <div class="details-bg" data-bind="style: {backgroundImage: 'url(\'\.\/assets\/' + getServicesContent().name + '\.png\')' }"></div>
                                 <div style="padding: 30px 70px;">
                                     <h4 data-bind="text: name" style="color: #00C1FF; margin-bottom: 22px; font-size: 18px">
                                     </h4>
@@ -144,7 +155,8 @@
                         </div>
                         <div class="col-md-12 col-sm-12 mobile-services">
                             <div class="owl-carousel" data-bind="foreach: servicesContent">
-                                <div style="padding: 30px 20px;" class="servie-item">
+                                <div style="padding: 30px 20px;" class="service-item">
+                                        <div class="details-bg" data-bind="style: {backgroundImage: 'url(\'\.\/assets\/' + name + '\.png\')' }"></div>
                                     <table style="width: 100%">
                                         <tr data-bind="click: function(){currentServiceItem(name)}"
                                             class="serviceItem">
