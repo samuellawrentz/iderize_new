@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Iderize - Digital Innovation</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Archivo+Black&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="libs/owl.carousel.min.css">
     <link rel="stylesheet" href="libs/owl.theme.default.min.css">
@@ -15,11 +16,14 @@
     <link rel="stylesheet" href="media.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.5.0/knockout-min.js"></script>
     <script src="./libs/slideNav.min.js"></script>
+    <!-- <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyDRFJ2NuHET1knQGo7zb91PHnN2W7tbSLU"></script>
+    <script src="map.js"></script> -->
+
 </head>
 
 <body>
+<div id="start"></div>
     <div class="container-fluid">
-        <div id="start"></div>
         <div class="row">
                 <nav class="navbar navbar-inverse navbar-fixed-top transparent">
                         <div class="container-fluid">
@@ -30,6 +34,7 @@
                             </a>
                           </div>
                           <ul class="nav navbar-nav">
+                              <li style="display: none"><a href="#start">Start</a></li>
                             <li><a href="#about">About</a></li>
                             <li><a href="#services">Services</a></li>
                             <li><a href="#contact">Contact</a></li>
@@ -139,7 +144,7 @@
                         </div>
                         <div class="col-md-12 col-sm-12 mobile-services">
                             <div class="owl-carousel" data-bind="foreach: servicesContent">
-                                <div style="padding: 30px 70px;" class="servie-item">
+                                <div style="padding: 30px 20px;" class="servie-item">
                                     <table style="width: 100%">
                                         <tr data-bind="click: function(){currentServiceItem(name)}"
                                             class="serviceItem">

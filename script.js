@@ -15,7 +15,7 @@ var servicesContent = [
         name: 'Software Testing',
         desc: 'Testing and quality assurance are critical aspects of software and hardware development. Our testing suite leaves nothing to chance, ensuring your products perform exactly as they should.',
         listItems : ['A/B Testing', 'Selenium', 'Test Cases', 'Regression Testing', 'Manual Stage Testing'],
-        additionalText: 'Most software failures that occur could have been easily avoided with performance testing. Testing reduces downtime, identifies vulnerabilities, and assures quality from day one.t'
+        additionalText: 'Most software failures that occur could have been easily avoided with performance testing. Testing reduces downtime, identifies vulnerabilities, and assures quality from day one.'
     },
     {
         name: 'Innovation',

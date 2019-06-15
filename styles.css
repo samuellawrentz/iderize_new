@@ -22,9 +22,10 @@
     width: 600px;
 }
 .title{
-    font-size: 60px;
+    font-size: 80px;
     font-weight: 700;
     letter-spacing: 7px;
+    font-family: 'Archivo Black', sans-serif;
 }
 
 .sub-text{
@@ -339,6 +340,13 @@ input[type="checkbox"]{
   .contact-us-details{
       color: white;
       margin-bottom: 45px;
+  }
+
+  #start{
+    position: absolute;
+    height: 300px;
+    width: 100%;
+    z-index: -1;
   }
 
   .contact-us-details h1{
