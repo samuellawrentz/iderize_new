@@ -165,16 +165,17 @@ h2{
 }
 
 .bulb{
-    position: relative;
+    position: absolute;
+    bottom: 0;
+    z-index: -1;
+    right: 10%;
+    transform: translateY(80%);
+    text-align: right;
 }
 
 .bulb img{
-    width: 40%;
-    max-width: 380px;
-    position: absolute;
-    right: 0;
-    top: -155px;
-    z-index: -1;
+    max-width: 480px;
+    width: 50%;
 }
 
 .owl-item{
@@ -259,8 +260,8 @@ h2{
     width: 40vh;
     background-repeat: no-repeat;
     background-size: 100%;
-    top: 30vh;
-    left: 70vh;
+    top: 40%;
+    left: 75%;
     filter: grayscale(1);
     opacity: 0.1;
     z-index: 0;
@@ -273,10 +274,10 @@ h2{
 
 .serviceItem{
     color: #212121;
-    font-size: 2vh;
+    font-size: 2.5vh;
     font-weight: 500;
     line-height: 31px;
-    height: 12vh;
+    height: 15vh;
     list-style: none;
     cursor: pointer;
 }

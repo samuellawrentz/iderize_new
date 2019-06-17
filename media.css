@@ -38,9 +38,10 @@
 
     .bulb img{
         width: 140px;
-        top: 0px;
-        transform: translateY(-237%);
-    z-index: -1;
+    }
+
+    .bulb{
+        right: 0;
     }
 
     .contact-us{
@@ -109,7 +110,7 @@
     }
 }
 
-@media screen and (min-width: 750px) and (max-width: 992px){
+@media screen and (min-width: 750px) and (max-width: 1024px){
     .desc{
         font-size: 18px;
     }
@@ -135,6 +136,14 @@
         padding: 2% 0;
         margin-bottom: 3%;
       }
+
+      .bulb img{
+        width: 300px;
+    }
+
+    .bulb{
+        right: 0;
+    }
 
 
       .mobile-services{
