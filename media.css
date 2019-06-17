@@ -13,8 +13,27 @@
         width: 300px;
     }
 
+    .scroll-bottom span{
+        font-size: 14px;
+        left: -15px;
+      }
+
+      .scroll-bottom{
+          left: 0;
+      }
+
+      .map{
+          display: none;
+      }
+    
+
     .desc{
         font-size: 18px;
+        line-height: 35px;
+    }
+
+    .sub-text{
+        font-size: 16px;
     }
 
     .bulb img{
@@ -83,6 +102,10 @@
         width: 70%;
         top: 54%;
         left: 55%;
+    }
+
+    .value, .vision{
+        padding-bottom: 3vh;
     }
 }
 

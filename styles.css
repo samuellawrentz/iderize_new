@@ -29,7 +29,7 @@
     font-size: 80px;
     font-weight: 700;
     letter-spacing: 7px;
-    font-family: 'Archivo Black', sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .menu{
@@ -108,7 +108,7 @@ font-weight: bold;
 }
 
 body{
-    font-family: Nunito;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .container-fluid .row > .col-md-12, #about .col-md-12, #about .col-md-6{
@@ -141,18 +141,27 @@ body{
 }
 
 .why-iderize{
-    margin-top: 78px;
+    margin-top: 1vh;
 }
 
 .why-iderize h2{
+    font-size: 3vh;
     font-weight: bold;
 }
 
 .desc{
     color: #212121;	
-    font-size: 24px;	
+    font-size: calc(3vh - 50%);	
     font-weight: 300;	
-    line-height: 40px;
+    line-height: 5vh;
+}
+
+h1{
+    font-size: 4vh;
+}
+
+h2{
+    font-size: 3vh;
 }
 
 .bulb{
@@ -160,11 +169,11 @@ body{
 }
 
 .bulb img{
-    width: 70%;
+    width: 40%;
     max-width: 380px;
     position: absolute;
     right: 0;
-    top: -185px;
+    top: -155px;
     z-index: -1;
 }
 
@@ -202,7 +211,8 @@ body{
     padding-left: 0 !important;
 }
 .value, .vision{
-    min-height: 600px;
+    min-height: 320px;
+    padding-bottom: 1vh;
 }
 
 .vision{
@@ -225,7 +235,7 @@ body{
 }
 
 .mobile-services table .serviceItem{
-    font-size: 20px;
+    font-size: 3vh;
     height: 90px;
 }
 
@@ -245,12 +255,12 @@ body{
 
 .details-bg{
     position: absolute;
-    height: 80%;
-    width: 60%;
+    height: 70vh;
+    width: 40vh;
     background-repeat: no-repeat;
     background-size: 100%;
-    top: 45%;
-    left: 65%;
+    top: 30vh;
+    left: 70vh;
     filter: grayscale(1);
     opacity: 0.1;
     z-index: 0;
@@ -263,10 +273,10 @@ body{
 
 .serviceItem{
     color: #212121;
-    font-size: 24px;
+    font-size: 2vh;
     font-weight: 500;
     line-height: 31px;
-    height: 145px;
+    height: 12vh;
     list-style: none;
     cursor: pointer;
 }
@@ -275,7 +285,7 @@ body{
     box-shadow: 10px 10px 0 0 rgba(70,70,79,0.05);
 }
 .service-listItems{
-    padding: 50px;
+    padding: 1vh 5vh;
 }
 
 .service-listItems li{
@@ -284,7 +294,7 @@ body{
 }
 
 .icon{
-    width: 85px;
+    width: 11vh;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
