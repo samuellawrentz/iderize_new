@@ -8,7 +8,7 @@
 }
 
 #about, #services{
-    min-height: 100vh;
+    min-height: 90vh;
 }
 
 .mobile-only {
@@ -151,7 +151,7 @@ body{
 
 .desc{
     color: #212121;	
-    font-size: calc(3vh - 50%);	
+    font-size: calc(3vh - 40%);	
     font-weight: 300;	
     line-height: 5vh;
 }
@@ -212,7 +212,7 @@ h2{
     padding-left: 0 !important;
 }
 .value, .vision{
-    min-height: 320px;
+    min-height: 40vh;
     padding-bottom: 1vh;
 }
 
