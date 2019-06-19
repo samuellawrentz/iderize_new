@@ -26,7 +26,7 @@ var servicesContent = [
     {
         name: 'Salesforce',
         desc: 'Salesforce is one of the most powerful CRMs on the market today, but it reaches its full potential only when it is customized to integrate with your business systems.',
-        listItems : ['Lightning Implementation & Migration', 'Admin, Development & Support Services', 'Sales, Service & Marketing Cloud Implementation', 'Pardot Marketing Automation', 'Nintex Drawloop Integration & DocuSign Integration'],
+        listItems : ['Lightning Implementation & Migration', 'Admin, Development & Support Services', 'Sales, Service & Marketing Cloud Implementation', 'Pardot Marketing Automation', 'Nintex Drawloop & DocuSign Integrations'],
         additionalText: 'Working closely with you, we will design, configure, and help you implement a dynamic Salesforce workflow.'
     }
 ]
