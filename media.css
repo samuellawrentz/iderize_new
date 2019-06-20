@@ -87,6 +87,8 @@
         position: relative;
         top: 42px;
         z-index: 1;
+        opacity: 0;
+        visibility: hidden
       }
 
       .vision-flex{
