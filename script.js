@@ -15,7 +15,7 @@ var servicesContent = [
         name: 'Software Testing',
         desc: 'Testing and quality assurance are critical aspects of software and hardware development. Our testing suite leaves nothing to chance, ensuring your products perform exactly as they should.',
         listItems : ['Functional QA & Testing', 'Mobile Testing', 'In-Sprint Automation', 'Performance Testing', 'Security Testing'],
-        additionalText: 'Our robust testing reduces downtime, identifies vulnerabilities, and assures quality from day one.'
+        additionalText: 'With robust testing reduce downtime, identify vulnerabilities, envision performace and build quality from day one.'
     },
     {
         name: 'Innovation',
@@ -73,6 +73,12 @@ $('#send').click(function(){
 $(window).scroll(()=>{
         $('.navbar').toggleClass('transparent', $(window).scrollTop() < 30);
         $('.navbar-brand').toggleClass('hide', !($(window).scrollTop() > $('.title').offset().top));
+});
+
+// https://stackoverflow.com/a/37113430/8252164
+// 100vh not constant in mobile fix
+$(window).resize(()=>{
+    $('.main-logo').height($(window).height());
 });
 
 $(document).ready(function(){
