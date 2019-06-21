@@ -15,6 +15,14 @@
         padding-top: 9vh !important;
     }
 
+    h1{
+        font-size: 22px;
+    }
+
+    h2{
+        font-size: 18px;
+    }
+
     hr{
         margin-top:0;
     }
@@ -28,13 +36,8 @@
         width: 300px;
     }
 
-    .scroll-bottom span{
-        font-size: 14px;
-        left: -15px;
-      }
-
       .scroll-bottom{
-          left: 0;
+          display: none;
       }
 
       .map{
@@ -43,8 +46,8 @@
     
 
     .desc{
-        font-size: 15px;
-        line-height: 35px;
+        font-size: 14px;
+        line-height: 1.4   ;
     }
 
     .sub-text{

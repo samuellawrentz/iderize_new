@@ -33,24 +33,34 @@
 }
 
 .menu{
-    position: absolute;
+    position: fixed;
     color: white;
     z-index: 1;
-    width: 80%;
-    height: 86%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    padding: 40% 0px;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    padding: 25% 7vh;
     overflow: hidden;
+    opacity: 1;
+    transition: all .5s linear;
+}
+
+.menu .navbar-brand{
+    float: none;
+    height: 50px;
+    padding: 0;
+    font-size: 18px;
+    line-height: 20px;
+    position: absolute;
+    top: 5vh;
 }
 
 .close-icon, .bars{
     position: absolute;
     color: #fff;
-    right: 15px;
-    top: 15px;
+    right: 15%;
+    top: 4vh;
     font-size: 20px;
 }
 
@@ -69,12 +79,11 @@
 .menu:before{
     position: absolute;
     content: '';
-    background-color: rgba(0,0,0,0.93);
+    background-color: #000;
     width: 135%;
     height: 100%;
     top: 0;
     left: -26%;
-    filter: blur(29px);
     z-index: -1;
   }
 
@@ -113,7 +122,11 @@ body{
     font-family: 'Open Sans', sans-serif;
 }
 
-.container-fluid .row > .col-md-12, #about .col-md-12, #about .col-md-6{
+.site-content{
+    position: relative;
+}
+
+.container-fluid .site-content > .col-md-12, #about .col-md-12, #about .col-md-6{
     padding-left: 0;
     padding-right: 0;
 }
@@ -140,6 +153,10 @@ body{
 
 .nav.navbar-nav li>a.active{
     color: #fff;
+}
+
+.contact-details .fas{
+    font-size: 24px;
 }
 
 .why-iderize{
@@ -260,7 +277,7 @@ h2{
     position: relative;
     right: 2px;
     overflow: hidden;
-    height: 70vh;
+    height: 73vh;
 }
 
 .details-bg{
@@ -519,3 +536,41 @@ font-weight: bold;
   .hide {
       opacity: 0 !important;
   }
+
+
+
+  #nav-toggle { position: absolute; z-index: 10;}
+
+#nav-toggle { cursor: pointer; padding: 10px 35px 16px 0px; }
+#nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
+  cursor: pointer;
+  border-radius: 1px;
+  height: 5px;
+  width: 35px;
+  background: white;
+  position: absolute;
+  display: block;
+  content: '';
+}
+#nav-toggle span:before {
+  top: -10px; 
+}
+#nav-toggle span:after {
+  bottom: -10px;
+}
+
+#nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
+  transition: all 500ms ease-in-out;
+}
+#nav-toggle.active span {
+  background-color: transparent;
+}
+#nav-toggle.active span:before, #nav-toggle.active span:after {
+  top: 0;
+}
+#nav-toggle.active span:before {
+  transform: rotate(45deg);
+}
+#nav-toggle.active span:after {
+  transform: rotate(-45deg);
+}

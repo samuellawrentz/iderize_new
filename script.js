@@ -85,15 +85,11 @@ $(document).ready(function(){
     $(".owl-carousel").owlCarousel({items: 1, margin: 22, stagePadding: 20});
   });
 
-  $('.bars').click(function(){
-      $(this).addClass('hide');
-      $('.menu').removeClass('hide');
+  $('#nav-toggle').click(function(){
+      $(this).toggleClass('active');
+      $('.menu').toggleClass('hide');
+      $('.site-content').toggleClass('hide');
   });
-
-  $('.close-icon').click(function(){
-    $('.menu').addClass('hide');
-    $('.bars').removeClass('hide');
-});
 
 $('.menu li').click(function(){
     $('.menu').addClass('hide');
