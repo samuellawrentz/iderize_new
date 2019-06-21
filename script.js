@@ -72,7 +72,7 @@ $('#send').click(function(){
 
 $(window).scroll(()=>{
         $('.navbar').toggleClass('transparent', $(window).scrollTop() < 30);
-        $('.navbar-brand').toggleClass('hide', !($(window).scrollTop() > $('.title').offset().top));
+        $('.navbar-brand.head').toggleClass('hide', !($(window).scrollTop() > $('.title').offset().top));
 });
 
 // https://stackoverflow.com/a/37113430/8252164
@@ -88,10 +88,12 @@ $(document).ready(function(){
   $('#nav-toggle').click(function(){
       $(this).toggleClass('active');
       $('.menu').toggleClass('hide');
-      $('.site-content').toggleClass('hide');
+      $('body').toggleClass('stop-scrolling')
   });
 
 $('.menu li').click(function(){
     $('.menu').addClass('hide');
     $('.bars').removeClass('hide');
+    $('body').toggleClass('stop-scrolling')
+    $('#nav-toggle').toggleClass('active');
 });

@@ -56,6 +56,11 @@
     top: 5vh;
 }
 
+.stop-scrolling {
+    height: 100%;
+    overflow: hidden;
+  }
+
 .close-icon, .bars{
     position: absolute;
     color: #fff;
