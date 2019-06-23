@@ -180,6 +180,12 @@ body{
     line-height: 4.5vh;
 }
 
+.desc-colorless{
+    font-size: calc(3vh - 55%);	
+    font-weight: 300;	
+    line-height: 4.5vh;
+}
+
 h1{
     font-size: 4vh;
 }
@@ -349,19 +355,21 @@ h2{
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
     height: 50px;
     padding: 0;
-    font-size: 20px;
-    margin-bottom: 30px;
+    font-size: calc(2vh);	
+    margin-bottom: 10px;
     outline: none;
 }
 
 .control-label{
     color: white;
     font-weight: 300;
+    font-size: calc(2vh);	
 }
 
 .control-label:not(#messageLabel):after{
     content: ' *';
     color: #FD853A;
+    font-size: calc(2vh);	
 }
 
 .serviceItem.active .icon{
@@ -372,7 +380,7 @@ h2{
     padding-left: 25px;
 }
 
-.service-listItems li.desc:before {
+.service-listItems li:before {
     content:'';
     padding-right: 15px;
     content: "•";
@@ -449,7 +457,7 @@ input[type="checkbox"]{
   }
 
   .map{
-      height: 800px ;
+      height: 90vh ;
       width: 100%;
       background: url(assets/map.png);
       background-size: cover;
@@ -477,7 +485,6 @@ input[type="checkbox"]{
 
   .contact-details table td{
       padding: 10px 15px 10px 0;
-      font-size: 18px;
   }
 
   td .fab{
