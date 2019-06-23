@@ -203,6 +203,16 @@ h2{
     font-size: 3vh;
 }
 
+.thank-you{
+    min-height: 545px;
+    min-height: 545px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
 .bulb{
     position: absolute;
     bottom: 0;

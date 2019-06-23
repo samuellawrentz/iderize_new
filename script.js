@@ -66,7 +66,12 @@ $('#send').click(function(){
             message: $('#message').val()
         }
        }).done(function(response) {
-         console.log(response);
+         
+    $('form, .help').addClass('hide');
+    $('.thank-you').removeClass('hide');
+    $('form, .help').addClass('hide');
+    $('.thank-you').removeClass('hide');
+
        });
 });
 
