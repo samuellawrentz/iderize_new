@@ -11,6 +11,15 @@
     min-height: 50vh;
 }
 
+td a {
+    color: white;
+    text-decoration: none;
+}
+
+td a:hover{
+    color: white;
+}
+
 .mobile-only {
     display: none;
 }
